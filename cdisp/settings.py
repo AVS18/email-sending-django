@@ -140,6 +140,4 @@ EMAIL_PORT = 587
 
 EMAIL_HOST_USER='<put your email>'
 EMAIL_HOST_PASSWORD='<put yout password>'
-#avsiiitk->'ucpczojmpivdyhdq'
-#gfg->'nzyzzveqccstoaqe'
 EMAIL_USE_TLS = True 
