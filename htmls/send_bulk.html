@@ -20,14 +20,10 @@
         {% endfor %}
     {%endif%}
 
-    <form action="" method="POST" enctype="multipart/form-data">
+    <form action="/excel" method="POST" enctype="multipart/form-data">
         {%csrf_token%}
-        Name: <input type="text" name="par_name" class="form-control"><br>
-        Email : <input type="text" name="par_email" class="form-control"><br>
-        Certificate: <input type="file" name="par_cerf" class="form-control"><br>
-        <input type="submit" value="Vadi Certificate Pampu" class="form-control btn btn-primary">
-        <br><br>
-        <a href="/excel" class="form-control btn btn-success">Bulk Certificates ; try via Excel</a>
+        Excel Sheet: <input type="file" name="excel_sheet" class="form-control"><br>
+        <input type="submit" value="Send Certificate Via Excel Upload" class="form-control btn btn-primary">
     </form>
     </div>
 </body>

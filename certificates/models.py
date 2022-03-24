@@ -6,3 +6,6 @@ class Email(models.Model):
     par_email = models.EmailField()
     par_cerf = models.FileField(upload_to='cerf/')
     par_event = models.CharField(max_length=100,blank=True)
+
+class BulkExcel(models.Model):
+    excel_sheet = models.FileField(upload_to='excel/')
